@@ -27,14 +27,14 @@
 		<section class="text-center">
 			<img src="assets/img/lab_logo.svg"  width="600" height="200">
 		</section>
-		<section class="content">
+		<section class="contenido">
 		<h2>¿Qué es Laboratoria?</h2>
 			<p>Laboratoria identificamos jóvenes de bajos recursos con un potencial enorme y les damos la oportunidad de convertirse en desarrolladoras web. El resultado es una gran transformación para cada estudiante y una gran fuente de talento femenino de América Latina para el mundo tech.</p>
 		<h5>Temas</h5>
-		<input type="submit" value="Sprint 1" class="sprint">
-		<input type="submit" value="Sprint 2" class="sprint">
-		<input type="submit" value="Sprint 3" class="sprint">
-		<div id="S1" >
+		<input type="submit" value="Sprint 1" class="sprint" onclick="mostarOcultar('text1')" >
+		<input type="submit" value="Sprint 2" class="sprint" onclick="mostarOcultar('text2')" >
+		<input type="submit" value="Sprint 3" class="sprint" onclick="mostarOcultar('text3')" >
+		<div id="sprint_1" >
 		   <br>
 			<h3>Sprint 1 : Introducción a JavaSript</h3>
 				<ol>
@@ -46,7 +46,7 @@
 			<br>
 			<hr>
 			<h3>Quiz</h3>
-				<div id="contenedor-quiz1" class="quiz-1">
+				<div id="Rquiz-1" class="hidden">
 						<h4>Existen dos tipos de funciones</h4>
 						<input type="radio" name="P1" value="1" > Expresadas y declaradas<br>
 						<input type="radio" name="P1" value="0" > Explícitas y declaradas<br>
@@ -56,43 +56,53 @@
 						<input type="radio" name="P2" value="1" > pop<br>
 						<input type="radio" name="P2" value="0" > add
 						<h4>Un objeto tiene ________ y _________</h4>
-						<input type="radio" name="P2" value="0" > números y letras<br>
-						<input type="radio" name="P2" value="0" > partes y validaciones<br>
-						<input type="radio" name="P2" value="1" > propiedades y valores
+						<input type="radio" name="P3" value="0" > números y letras<br>
+						<input type="radio" name="P3" value="0" > partes y validaciones<br>
+						<input type="radio" name="P3" value="1" > propiedades y valores
 					<br>
-					<input type="submit" name="" value="ENVIAR" id="RS1">
+					<p> <input type="submit"  value="ENVIAR" id="RS1"></p>
 				</div>	
 		</div>
-		<div id="S2" class="hidden">
+		<div id="sprint_2" >
 		   <br>
-			<h3>Sprint 1 : Introducción a JavaSript</h3>
+			<h3>Sprint 2 : Introducción al desarrollo web y construcción de páginas web</h3>
 				<ol>
-					<li>Fundamentos de Programación</li>
-					<li>Funciones</li>
-					<li>Arreglos</li>
-					<li>Objetos</li>
+					<li>Ciclo de vida del desarrollo web y arquitectura básica cliente/servidor / Configuración del ambiente de trabajo e introducción a git.</li>
+					<li>HTML y Javascript en el navegador</li>
+					<li>Manejo de comandos básicos de git en la terminal </li>
+					<li>Pruebas unitarias</li>
+					<li>Git / Resolucion de conflictos / Branching model</li>
+					<li>DOM</li>
 				</ol>
 			<br>
 			<hr>
 			<h3>Quiz</h3>
-				<div id="contenedor-quiz1" class="">
-						<h4>Existen dos tipos de funciones</h4>
-						<input type="radio" name="P1" value="1" > Expresadas y declaradas<br>
-						<input type="radio" name="P1" value="0" class="quiz-1"> Explícitas y declaradas<br>
-						<input type="radio" name="P1" value="0" class="quiz-1"> Expresadas y derivadas
-						<h4>Elije una propiedad de los arreglos</h4>
-						<input type="radio" name="P2" value="0" class="quiz-1"> clear<br>
-						<input type="radio" name="P2" value="1" class="quiz-1"> pop<br>
-						<input type="radio" name="P2" value="0" class="quiz-1"> add
-						<h4>Un objeto tiene ________ y _________</h4>
-						<input type="radio" name="P2" value="0" class="quiz-1"> números y letras<br>
-						<input type="radio" name="P2" value="0" class="quiz-1"> partes y validaciones<br>
-						<input type="radio" name="P2" value="1" class="quiz-1"> propiedades y valores
-					<br>
-					<input type="submit" name="" value="ENVIAR" id="RS1">
+				<div id="Rquiz-2" class="show">
+						<h4>¿Cuál es el comando para iniciar un repositorio desde la consola?</h4>
+						<input type="radio" name="P1" value="answer1" > git init .<br>
+						<input type="radio" name="P1" value="answer2" > git init<br>
+						<input type="radio" name="P1" value="answer3" > git init add
+						<h4>¿Cuál es la finalidad de hacer una prueba unitaria?</h4>
+						<input type="radio" name="P2" value="answer1" > Comprobar que el código funciona correctamente<br>
+						<input type="radio" name="P2" value="answer2"> Darle valores a los parámetros de dichas funciones<br>
+						<input type="radio" name="P2" value="answer3" "> No tiene ningún fin
+						<h4>¿Qué significa DOM?</h4>
+						<input type="radio" name="answer" value="answer1""> Dual Objet Model<br>
+						<input type="radio" name="answer" value="answer3" "> Document Objet Model<br>
+						<input type="radio" name="answer" value="answer2" "> Document Obsolet Model<br>
+					    <p><input type="submit"  value="ENVIAR" id="RS2"></p>
 				</div>	
 		</div>
+		<div id="sprint_3" class="hidden"id="">
+		<br>
+				<h3>Sprint 3</h3>
+				<p>No hay lecciones ;( </p>	
+		</div>
 		</section>
-		<h1>Holi lab</h1>
+		<div>				
+        <footer class="text-center">Created by <b>Maia Rojas</b></footer>
+        </div>
+		<script type="text/javascript" src="assets/js/main.js"></script>
+		<script type="text/javascript" src="assets/js/dropdowns.js"></script>
 	</body>
 </html>
